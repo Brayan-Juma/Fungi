@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" ></script>
+
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/normalize.css">
 
@@ -28,7 +32,7 @@
                     <a href="#" class="nav__links">Acerca de</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
+                    <a href="#footer" class="nav__links">Contacto</a>
                 </li>
                 <li class="nav__items">
                     <a href="#" class="nav__links">Blog</a>
@@ -111,7 +115,7 @@
         </section>
   <!---------------Galeria---------------------------------->
         <section class="price container">
-            <h2 class="subtitle">Galeria  :p</h2>
+            <h2 class="subtitle">GALERIA</h2>
 
             <div class="ful-img" id="fulImgBox">
                 <img src="./img/img1.jpg" id="fulImg" alt="">
@@ -134,6 +138,7 @@
         </section>
     <!---------------TESTIMONIOS---------------------------------->
         <section class="testimony">
+        <h2 class="subtitle">TESTIMONIOS</h2>
             <div class="testimony__container container">
                 <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
 
@@ -195,46 +200,35 @@
        
     </main>
 
-    <footer class="footer">
-        <section class="footer__container container">
-            <nav class="nav nav--footer">
-                <h2 class="footer__title">FUNGIEXPLORER</h2>
-
-                <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Acerca de</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Contacto</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#" class="nav__links">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
-                <h2 class="footer__newsletter">Registrarme ahora !!!</h2>
-                <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
-                    <input type="submit" value="Registrate" class="footer__submit">
-                </div>
-            </form>
-        </section>
-
-        <section class="footer__copy container">
-            <div class="footer__social">
-                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+<!--::::Pie de Pagina::::::-->
+<footer id="footer" class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/logotipo-sleedw.svg" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
             </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Bryan Juma</b> - Todos los Derechos Reservados.</small>
+        </div>
 
-            <h3 class="footer__copyright">Derechos reservados &copy; Bryan Juma</h3>
-        </section>
-    </footer>
 
 
     <script src="./js/slider.js"></script>
