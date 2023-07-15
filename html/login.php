@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Iniciar sesión</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
-<body class="login">
-    <div class="login-container">
+<body>
+<div class="login-container">
         <h1 class="login-title">Iniciar sesión</h1>
         <form class="login-form" action="../php/login.php" method="POST">
             <div>
@@ -27,8 +29,14 @@
             </div>
         </form>
     </div>
+    
 </body>
 </html>
+
+
+
+
+
 
 
 
