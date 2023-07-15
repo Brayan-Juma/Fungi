@@ -53,13 +53,17 @@
                 <div class="list__button">
                     <img src="../assets/dashboard.svg" class="list__img">
                     <a href="#" class="nav__link">Inicio</a>
+                    
                 </div>
             </li>
 
             <li class="list__item">
                 <div class="list__button">
                     <img src="../assets/stats.svg" class="list__img">
-                    <a href="#" class="nav__link">Introduccion</a>
+             
+                    <a href="introduccion.html" onclick="cambiarContenido(event, 'contenido-introduccion')"
+                        class="nav__link">INTRODUCCION</a>
+                    
                 </div>
             </li>
 
@@ -122,6 +126,69 @@
 
     
     <script src="../js/barra.js"></script>
+    <div class="content-container">
+        <section id="contenido-inicio">
+          <h3>Bienvenido al mundo Fungi</h3>
+          <img id="home" src="../imagenes/inicio.png" alt="">
+         
+            </section>
+  
+        <section id="contenido-introduccion" style="display: none;">
+          <h2>Introducción</h2>
+          <div class="intro">
+            <img class="intro1" src="../imagenes/fondo2.jpg" alt="intro">
+            <img class="intro2" src="../imagenes/fondo3.jpg" alt="intro2">
+          </div>
+          <div class="textintro">
+            <p>Fungí Explorer tiene como objetivo poner a disposición el compendio de información más completo de hongos
+              macroscópicos del Ecuador.
+  
+              Los hongos del Ecuador comprenden un grupo de organismos versátiles y diversos en su morfología, fisiología
+              y ecología, estas características les han permitido colonizar todo tipo de hábitats, desde páramos hasta
+              selvas tropicales. Su amplia distribución refleja su importancia ecológica dentro de los ecosistemas. Los
+              hongos son los principales degradadores y recicladores de la materia orgánica, y sin hongos no habría vida
+              en la tierra. Sin su presencia, los restos de los seres vivos que mueren se acumularían y darían lugar a
+              inmensos depósitos de materia orgánica. Además, los hongos han sido utilizados en la industria farmacéutica,
+              alimentaria y agrícola contribuyendo de muchas maneras al bienestar humano, pero aún hay mucho por
+              descubrir.
+  
+              Hasta la fecha, FungiWebEcuador dispone información de más de 7700 especímenes, agrupados en 60 órdenes, 155
+              familias, 472 géneros y 843 especies. FungiWebEcuador incluye una lista actualizada de especies con su
+              respectiva distribución geográfica, identificación y taxonomía. El portal, además, comparte imágenes de la
+              mayoría de especies de hongos del Ecuador, así como mapas de distribución actual y potencial de acuerdo con
+              escenarios de cambio climático a futuro. Estos mapas se modifican con el crecimiento de las colecciones.
+  
+              Brindar información sobre diversidad, importancia ecológica y cultural es fundamental para el desarrollo de
+              propuestas de manejo sustentable y así mantener la estabilidad de los ecosistemas de los cuales obtenemos
+              los servicios esenciales para nuestro desarrollo humano..</p>
+  
+          </div>
+  
+        </section>
+  
+        <section id="contenido-indice" style="display: none;">
+          <h2>Índice Taxonómico</h2>
+          <p>Contenido de la sección de Índice Taxonómico.</p>
+  
+  
+  
+        </section>
+  
+        <section id="contenido-quienes" style="display: none;">
+          <h2>Quiénes Somos</h2>
+          <p>Contenido de la sección de Quiénes Somos.</p>
+        </section>
+  
+        <section id="contenido-glosario" style="display: none;">
+          <h2>Glosario</h2>
+          <p>Contenido de la sección de Glosario.</p>
+        </section>
+  
+        <section id="contenido-contacto" style="display: none;">
+          <h2>Contáctenos</h2>
+          <p>Jeremy Pavon: jjpavonb@utn.edu.ec/0997786962</p>
+        </section>
+      </div>
 
 </body>
 </html>
