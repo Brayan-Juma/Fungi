@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-<<<<<<< HEAD
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-=======
+
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/normalize.css">
->>>>>>> bb2b17047ba526c6b938345762a6009dd56b8337
 
 </head>
 
@@ -201,7 +199,7 @@
 
        
     </main>
-<<<<<<< HEAD
+
 <!--::::Pie de Pagina::::::-->
 <footer id="footer" class="pie-pagina">
         <div class="grupo-1">
@@ -230,7 +228,6 @@
         <div class="grupo-2">
             <small>&copy; 2023 <b>Bryan Juma</b> - Todos los Derechos Reservados.</small>
         </div>
-=======
 
     <footer class="footer">
         <section class="footer__container container">
@@ -271,7 +268,6 @@
 
             <h3 class="footer__copyright">Derechos reservados &copy; Bryan Juma</h3>
         </section>
->>>>>>> bb2b17047ba526c6b938345762a6009dd56b8337
     </footer>
 
 
