@@ -34,7 +34,7 @@
                     <a href="#" class="nav__links">Blog</a>
                 </li>
                 <li class="nav__items">
-                    <a href="/fungi/html/login.php" class="nav__links">Iniciar Sesion</a>
+                    <a href="./html/login.html" class="nav__links">Iniciar Sesion</a>
                 </li>
 
                 <img src="./images/close.svg" class="nav__close">
@@ -46,7 +46,7 @@
         </nav>
 
         <section class="hero__container container">
-            <h1 class="hero__title">MUNDO FUNGI.</h1>
+            <h1 class="hero__title">REINO  FUNGI.</h1>
             <p class="hero__paragraph">El reino Fungi comprende
                 miles de especies diferentes, y se estima que existen 
                 muchas más aún por descubrir. Estos organismos se 
