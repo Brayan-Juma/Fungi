@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/normalize.css">
 
 </head>
 
@@ -37,11 +37,11 @@
                     <a href="/fungi/html/login.php" class="nav__links">Iniciar Sesion</a>
                 </li>
 
-                <img src="../images/close.svg" class="nav__close">
+                <img src="./images/close.svg" class="nav__close">
             </ul>
 
             <div class="nav__menu">
-                <img src="../images/menu.svg" class="nav__img">
+                <img src="./images/menu.svg" class="nav__img">
             </div>
         </nav>
 
@@ -55,7 +55,7 @@
                  pasando por los desiertos y las zonas polares. Algunos hongos
                   son parásitos, mientras que otros forman relaciones 
                   simbióticas con plantas y animales, beneficiándose mutuamente.</p>
-            <a href="#" class="cta">Registrarse</a>
+            <a href="./html/register.html" class="cta">Registrarse</a>
         </section>
     </header>
 
@@ -70,21 +70,21 @@
 
             <div class="about__main">
                 <article class="about__icons">
-                    <img src="../img/guardar.png" class="about__icon">
+                    <img src="./img/guardar.png" class="about__icon">
                     <h3 class="about__title">Guardar Datos</h3>
                     <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
                         porro eius facilis?</p>
                 </article>
 
                 <article class="about__icons">
-                    <img src="../img/gestion.png" class="about__icon">
+                    <img src="./img/gestion.png" class="about__icon">
                     <h3 class="about__title">Gestionar Datos</h3>
                     <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
                         porro eius facilis?</p>
                 </article>
 
                 <article class="about__icons">
-                    <img src="../img/pdf.png" class="about__icon">
+                    <img src="./img/pdf.png" class="about__icon">
                     <h3 class="about__title">Generar Reportes</h3>
                     <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
                         porro eius facilis?</p>
@@ -103,7 +103,7 @@
                 </div>
 
                 <figure class="knowledge__picture">
-                    <img src="../img/img5.jpg" class="knowledge__img">
+                    <img src="./img/img5.jpg" class="knowledge__img">
                 </figure>
             </div>
         </section>
@@ -112,28 +112,28 @@
             <h2 class="subtitle">Galeria  :p</h2>
 
             <div class="ful-img" id="fulImgBox">
-                <img src="..imgs/1.jpg" id="fulImg" alt="">
+                <img src="./img/img1.jpg" id="fulImg" alt="">
                 <span onclick="closeImg()">X</span>
             </div>
         
             <div class="img-gallery">
-                <img src="../img/img1.jpg" onclick="openFulImg(this.src)" alt="">
-                <img src="../img/img3.jpg" onclick="openFulImg(this.src)" alt="">
-                <img src="../img/img2.jpg" onclick="openFulImg(this.src)" alt="">
-                <img src="../img/img4.jpg" onclick="openFulImg(this.src)" alt="">
-                <img src="../img/img6.jpg" onclick="openFulImg(this.src)" alt="">
-                <img src="../img/img1.jpg" onclick="openFulImg(this.src)" alt="">
-                <img src="../img/img4.jpg" onclick="openFulImg(this.src)" alt="">
-                <img src="../img/img5.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="./img/img1.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="./img/img3.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="./img/img2.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="./img/img4.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="./img/img6.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="./img/img1.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="./img/img4.jpg" onclick="openFulImg(this.src)" alt="">
+                <img src="./img/img5.jpg" onclick="openFulImg(this.src)" alt="">
             </div>
-            <script src="../js/galeria.js"></script>
+            <script src="./js/galeria.js"></script>
 
 
         </section>
     <!---------------TESTIMONIOS---------------------------------->
         <section class="testimony">
             <div class="testimony__container container">
-                <img src="../images/leftarrow.svg" class="testimony__arrow" id="before">
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
 
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__texts">
@@ -144,7 +144,7 @@
                     </div>
 
                     <figure class="testimony__picture">
-                        <img src="../img/img5.jpg" class="testimony__img">
+                        <img src="./img/img5.jpg" class="testimony__img">
                     </figure>
                 </section>
 
@@ -157,7 +157,7 @@
                     </div>
 
                     <figure class="testimony__picture">
-                        <img src="../img/img3.jpg" class="testimony__img">
+                        <img src="./img/img3.jpg" class="testimony__img">
                     </figure>
                 </section>
 
@@ -169,7 +169,7 @@
                     </div>
 
                     <figure class="testimony__picture">
-                        <img src="../img/img1.jpg" class="testimony__img">
+                        <img src="./img/img1.jpg" class="testimony__img">
                     </figure>
                 </section>
 
@@ -181,24 +181,64 @@
                     </div>
 
                     <figure class="testimony__picture">
-                        <img src="../img/foto1.jpeg" class="testimony__img">
+                        <img src="./img/foto1.jpeg" class="testimony__img">
                     </figure>
                 </section>
 
 
-                <img src="../images/rightarrow.svg" class="testimony__arrow" id="next">
+                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
             </div>
         </section>
 
        
     </main>
 
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">FUNGIEXPLORER</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Registrarme ahora !!!</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Bryan Juma</h3>
+        </section>
+    </footer>
 
 
-    <script src="../js/slider.js"></script>
-    <script src="../js/questions.js"></script>
-    <script src="../js/menu.js"></script>
-    <script src="../js/imf.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/imf.js"></script>
 </body>
 
 
