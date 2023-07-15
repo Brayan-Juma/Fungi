@@ -34,7 +34,7 @@
                     <a href="#" class="nav__links">Blog</a>
                 </li>
                 <li class="nav__items">
-                    <a href="/fungi/html/login.html" class="nav__links">Iniciar Sesion</a>
+                    <a href="/fungi/html/login.php" class="nav__links">Iniciar Sesion</a>
                 </li>
 
                 <img src="../images/close.svg" class="nav__close">
