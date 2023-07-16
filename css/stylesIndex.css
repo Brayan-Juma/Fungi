@@ -337,8 +337,9 @@ h1 span {
 }
 
 
-/* Footer */
 
+/* Footer */
+/*:::::Pie de Pagina*/
 .pie-pagina{
     width: 100%;
     background-color: #0a141d;
@@ -403,6 +404,7 @@ h1 span {
         padding: 35px 0px;
     }
 }
+
 
 /* Media queries */
 
@@ -486,8 +488,7 @@ h1 span {
 
     }
 
-   
-
+  
 }
 
 @media (max-width:600px) {
@@ -529,10 +530,7 @@ h1 span {
         width: 100%;
     }
 
-    .testimony__course {
-        margin-top: 15px;
-    }
-
+ 
 }
 
 .image-e {

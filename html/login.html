@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
     <link rel="stylesheet" href="../css/login.css">
+    <script src="https://kit.fontawesome.com/a8638e0a1d.js" crossorigin="anonymous"></script>
+
+
 </head>
+
 <body>
-<div class="login-container">
+    <div class="login-container">
         <h1 class="login-title">Iniciar sesión</h1>
-        <form class="login-form" action="../php/login.php" method="POST">
+        <form class="login-form" onsubmit="agregarDireccion(); return false;">
             <div>
                 <label for="cedula">Cédula:</label>
                 <input type="text" id="cedula" name="cedula" required>
@@ -19,6 +25,7 @@
                 <input type="password" id="password" name="password" required>
             </div>
             <input type="submit" value="Iniciar sesión">
+
             <div class="links">
                 <div class="olvidadaste-tu-contrasea">
                     <a href="../html/recuperar.html">Recuperar cuenta</a>
@@ -29,14 +36,13 @@
             </div>
         </form>
     </div>
-    
+
+    <script>
+        function agregarDireccion() {
+            var direccion = "main.html";
+            window.location.href = direccion;
+        }
+    </script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-

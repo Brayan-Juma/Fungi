@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" ></script>
+    <link rel="stylesheet" href="./css/stylesIndex.css">
+    <link rel="stylesheet" href="./css/normalizeIndex.css">
 
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js"></script>
+
+
 
 </head>
 
@@ -32,7 +32,7 @@
                     <a href="#" class="nav__links">Acerca de</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#footer" class="nav__links">Contacto</a>
+                    <a href="#" class="nav__links">Contacto</a>
                 </li>
                 <li class="nav__items">
                     <a href="#" class="nav__links">Blog</a>
@@ -41,27 +41,25 @@
                     <a href="./html/login.html" class="nav__links">Iniciar Sesion</a>
                 </li>
 
-                <img src="./images/close.svg" class="nav__close">
+                <img src="./assets/close.svg" class="nav__close">
             </ul>
 
             <div class="nav__menu">
-                <img src="./images/menu.svg" class="nav__img">
+                <img src="./assets/menu.svg" class="nav__img">
             </div>
         </nav>
 
         <section class="hero__container container">
-            <h1 class="hero__title">REINO  FUNGI.</h1>
+            <h1 class="hero__title">MUNDO FUNGI.</h1>
             <p class="hero__paragraph">El reino Fungi comprende
-                miles de especies diferentes, y se estima que existen 
-                muchas más aún por descubrir. Estos organismos se 
-                encuentran en prácticamente todos los hábitats de la 
+                miles de especies diferentes, y se estima que existen
+                muchas más aún por descubrir. Estos organismos se
+                encuentran en prácticamente todos los hábitats de la
                 Tierra, desde los suelos de los bosques hasta los océanos,
-                 pasando por los desiertos y las zonas polares. Algunos hongos
-                  son parásitos, mientras que otros forman relaciones 
-                  simbióticas con plantas y animales, beneficiándose mutuamente.</p>
-
-            <a href="./html/register.html" class="cta">Registrarse</a>
-
+                pasando por los desiertos y las zonas polares. Algunos hongos
+                son parásitos, mientras que otros forman relaciones
+                simbióticas con plantas y animales, beneficiándose mutuamente.</p>
+            <a href="#" class="cta">Registrarse</a>
         </section>
     </header>
 
@@ -105,7 +103,7 @@
                     <p class="knowledge__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
                         aliquam nemo in facere suscipit at delectus unde labore ad officia iste accusantium eaque
                         aperiam laborum est voluptate totam? Modi, obcaecati?</p>
-                    <a href="./html/register.html" class="cta">Registrarme</a>
+                    <a href="#" class="cta">Registrarme</a>
                 </div>
 
                 <figure class="knowledge__picture">
@@ -113,7 +111,7 @@
                 </figure>
             </div>
         </section>
-  <!---------------Galeria---------------------------------->
+        <!---------------Galeria---------------------------------->
         <section class="price container">
             <h2 class="subtitle">GALERIA</h2>
 
@@ -121,7 +119,7 @@
                 <img src="./img/img1.jpg" id="fulImg" alt="">
                 <span onclick="closeImg()">X</span>
             </div>
-        
+
             <div class="img-gallery">
                 <img src="./img/img1.jpg" onclick="openFulImg(this.src)" alt="">
                 <img src="./img/img3.jpg" onclick="openFulImg(this.src)" alt="">
@@ -132,19 +130,19 @@
                 <img src="./img/img4.jpg" onclick="openFulImg(this.src)" alt="">
                 <img src="./img/img5.jpg" onclick="openFulImg(this.src)" alt="">
             </div>
-            <script src="./js/galeria.js"></script>
+
 
 
         </section>
-    <!---------------TESTIMONIOS---------------------------------->
+        <!---------------TESTIMONIOS---------------------------------->
         <section class="testimony">
-        <h2 class="subtitle">TESTIMONIOS</h2>
             <div class="testimony__container container">
-                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+                <img src="./assets/leftarrow.svg" class="testimony__arrow" id="before">
 
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Dario <span class="testimony__course">Miembro de FungiExplorer.</span></h2>
+                        <h2 class="subtitle">Mi nombre es Dario <span class="testimony__course">Miembro de
+                                FungiExplorer.</span></h2>
                         <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
                             esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem
                             blanditiis laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
@@ -157,7 +155,8 @@
 
                 <section class="testimony__body" data-id="2">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Jeremi, <span class="testimony__course">Miembro de FungiExplorer.</span></h2>
+                        <h2 class="subtitle">Mi nombre es Jeremi, <span class="testimony__course">Miembro de
+                                FungiExplorer.</span></h2>
                         <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
                             esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
                             voluptatum!</p>
@@ -170,7 +169,8 @@
 
                 <section class="testimony__body" data-id="3">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Vitor , <span class="testimony__course">Miembro de FungiExplorer.</span></h2>
+                        <h2 class="subtitle">Mi nombre es Vitor , <span class="testimony__course">Miembro de
+                                FungiExplorer.</span></h2>
                         <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
                             esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
                     </div>
@@ -182,7 +182,8 @@
 
                 <section class="testimony__body" data-id="4">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Bryan Juma, <span class="testimony__course">Miembro de FungiExplorer.</span></h2>
+                        <h2 class="subtitle">Mi nombre es Bryan Juma, <span class="testimony__course">Miembro de
+                                FungiExplorer.</span></h2>
                         <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
                             esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
                     </div>
@@ -193,20 +194,19 @@
                 </section>
 
 
-                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+                <img src="./assets/rightarrow.svg" class="testimony__arrow" id="next">
             </div>
         </section>
 
-       
-    </main>
 
-<!--::::Pie de Pagina::::::-->
-<footer id="footer" class="pie-pagina">
+    </main>
+    <!---------------Footer---------------------------------->
+    <footer class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="img/logotipo-sleedw.svg" alt="Logo de SLee Dw">
+                        <img src="./img/img3.jp" alt="Logo de Fungi">
                     </a>
                 </figure>
             </div>
@@ -226,15 +226,15 @@
             </div>
         </div>
         <div class="grupo-2">
-            <small>&copy; 2023 <b>Anderson</b> - Todos los Derechos Reservados.</small>
+            <small>&copy; 2023 <b>Bryan Juma</b> - Todos los Derechos Reservados.</small>
         </div>
-
-
+    </footer>
 
     <script src="./js/slider.js"></script>
-    <script src="./js/questions.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/imf.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/imf.js"></script>
+    <script src="./js/galeria.js"></script>
+
 </body>
 
 

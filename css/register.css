@@ -1,15 +1,17 @@
 body {
-  background-image: url("../imagenes/image5.png");
+  background-image: url("../img/img2.jpg");
   background-size: cover;
 }
 
 .register-container {
+  
   width: 300px;
-  margin: 150px auto;
-  padding: 20px;
-  background-color: rgba(60, 60, 60, 0.4);
+  margin: 30px auto;
+  padding: 10px;
+background-color: rgba(255, 255, 255, 0.4);
+  opacity:initial;
   border-radius: 10px;
-  border: 0.1px solid #ffffff;
+  border: 0.1px solid;
   box-shadow: 0 0 20px rgba(60, 60, 60, 10);
 }
 
@@ -17,7 +19,7 @@ body {
   font-size: 36px;
   font-weight: 600;
   font-family: 'Noto Sans';
-  color: #fff;
+  color: #020101;
   text-align: left;
 }
 
@@ -31,18 +33,17 @@ body {
 
 .register-form input {
   border-radius: 12px;
-  background-color: rgba(60, 60, 60, 0);
-  border: 0.1px solid #ffffff;
+  border: 0.1px solid #000000;
   width: 95%;
   display: block;
   padding: 10px;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .register-form input[type="submit"] {
   background: linear-gradient(90.57deg, #2e4cee, #221ebf 53.13%, #040f75);
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -50,7 +51,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   font-family: 'Noto Sans';
-  color: #fff;
+  color: #030303;
   text-align: left;
 }
 

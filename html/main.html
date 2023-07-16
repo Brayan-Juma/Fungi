@@ -1,194 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-<link rel="stylesheet" href="../css/stylesM.css">
-<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-
+    <title>Menú con barra lateral y de navegación</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
-     
-    <header>
-        <div class="container__header">
-            <div class="logo">
-                <a href="#">
-                    <img src="../assets/images/Logo/logo-magtimus.png" alt="">
-                </a>
-            </div>
 
-            <div class="menu">
-                <nav>
-                   <h1>FUNGI -EXPLORER</h1>
-                </nav>
-
-                <a href="#" class="btn__quote">Cotizar</a>
-
-                <div class="socialMedia">
-                    <a href="#">
-                        <img src="../assets/images/social media/facebook.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="../assets/images/social media/instagram.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="../assets/images/social media/twitter.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="../assets/images/social media/youtube.png" alt="">
-                    </a>
-                </div>
-            </div>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="Logo">
         </div>
-    </header>
+        <h1>FUNGI EXPLORER</h1>
 
 
-    
-    <nav class="nav">
-        <ul class="list">
-
-            <li class="list__item">
-                <div class="list__button">
-                    <img src="../assets/dashboard.svg" class="list__img">
-                    <a href="#" class="nav__link">Inicio</a>
-                    
-                </div>
-            </li>
-
-            <li class="list__item">
-                <div class="list__button">
-                    <img src="../assets/stats.svg" class="list__img">
-             
-                    <a href="introduccion.html" onclick="cambiarContenido(event, 'contenido-introduccion')"
-                        class="nav__link">INTRODUCCION</a>
-                    
-                </div>
-            </li>
-
-            <li class="list__item">
-                <div class="list__button">
-                    <img src="../assets/stats.svg" class="list__img">
-                    <a href="#" class="nav__link">Contenido</a>
-                </div>
-            </li>
-
-            <li class="list__item list__item--click">
-                <div class="list__button list__button--click">
-                    <img src="../assets/docs.svg" class="list__img">
-                    <a href="#" class="nav__link">Servicios</a>
-                    <img src="../assets/arrow.svg" class="list__arrow">
-                </div>
-
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Indice Taxonomico</a>
-                    </li>
-
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Numero de Especies</a>
-                    </li>
-
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Reportes</a>
-                    </li>
+        <ul class="navbar-menu">
+            <li><a href="#">Bienvedido</a></li>
+            <li class="navbar-dropdown">
+                <button class="navbar-dropdown-toggle">
+                    <img src="user.png" alt="Foto de usuario" class="user-photo">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="navbar-dropdown-menu">
+                    <li><a href="#" id="configuracion">Configuración</a></li>
+                    <li><a href="#" id="cerrar-sesion">Cerrar sesión</a></li>
                 </ul>
-
             </li>
-
-
-            <li class="list__item">
-                <div class="list__button">
-                    <img src="../assets/stats.svg" class="list__img">
-                    <a href="#" class="nav__link">Quienes somos</a>
-                </div>
-            </li>
-
-            <li class="list__item">
-                <div class="list__button">
-                    <img src="../assets/stats.svg" class="list__img">
-                    <a href="#" class="nav__link">Glosario</a>
-                </div>
-            </li>
-
-
-
-            <li class="list__item">
-                <div class="list__button">
-                    <img src="../assets/message.svg" class="list__img">
-                    <a href="#" class="nav__link">Contacto</a>
-                </div>
-            </li>
-
         </ul>
     </nav>
 
-    
-    <script src="../js/barra.js"></script>
+    <div class="sidebar">
+        <div class="logo">
+            <label for=""><b>BUSCAR</b></label>
+            <input type="text" placeholder="Que busca ??">
+        </div>
+        <ul class="menu">
+            <li><a href="#" onclick="cambiarContenido(event, 'contenido-inicio')" class="nav-button">Inicio</a></li>
+            <li><a href="#" onclick="cambiarContenido(event, 'contenido-introduccion')"
+                    class="nav-button">Introduccion</a></li>
+            <li><a href="#" onclick="cambiarContenido(event, 'contenido-indice')" class="nav-button">Índice
+                    Taxonómico</a></li>
+            <li><a href="#" onclick="cambiarContenido(event, 'contenido-quienes')" class="nav-button">Quiénes Somos</a>
+            </li>
+            <li><a href="#" onclick="cambiarContenido(event, 'contenido-glosario')" class="nav-button">Glosario</a></li>
+            <li><a href="#" onclick="cambiarContenido(event, 'contenido-contacto')" class="nav-button">Contáctenos</a>
+            </li>
+        </ul>
+    </div>
+
     <div class="content-container">
         <section id="contenido-inicio">
-          <h3>Bienvenido al mundo Fungi</h3>
-          <img id="home" src="../imagenes/inicio.png" alt="">
-         
-            </section>
-  
-        <section id="contenido-introduccion" style="display: none;">
-          <h2>Introducción</h2>
-          <div class="intro">
-            <img class="intro1" src="../imagenes/fondo2.jpg" alt="intro">
-            <img class="intro2" src="../imagenes/fondo3.jpg" alt="intro2">
-          </div>
-          <div class="textintro">
-            <p>Fungí Explorer tiene como objetivo poner a disposición el compendio de información más completo de hongos
-              macroscópicos del Ecuador.
-  
-              Los hongos del Ecuador comprenden un grupo de organismos versátiles y diversos en su morfología, fisiología
-              y ecología, estas características les han permitido colonizar todo tipo de hábitats, desde páramos hasta
-              selvas tropicales. Su amplia distribución refleja su importancia ecológica dentro de los ecosistemas. Los
-              hongos son los principales degradadores y recicladores de la materia orgánica, y sin hongos no habría vida
-              en la tierra. Sin su presencia, los restos de los seres vivos que mueren se acumularían y darían lugar a
-              inmensos depósitos de materia orgánica. Además, los hongos han sido utilizados en la industria farmacéutica,
-              alimentaria y agrícola contribuyendo de muchas maneras al bienestar humano, pero aún hay mucho por
-              descubrir.
-  
-              Hasta la fecha, FungiWebEcuador dispone información de más de 7700 especímenes, agrupados en 60 órdenes, 155
-              familias, 472 géneros y 843 especies. FungiWebEcuador incluye una lista actualizada de especies con su
-              respectiva distribución geográfica, identificación y taxonomía. El portal, además, comparte imágenes de la
-              mayoría de especies de hongos del Ecuador, así como mapas de distribución actual y potencial de acuerdo con
-              escenarios de cambio climático a futuro. Estos mapas se modifican con el crecimiento de las colecciones.
-  
-              Brindar información sobre diversidad, importancia ecológica y cultural es fundamental para el desarrollo de
-              propuestas de manejo sustentable y así mantener la estabilidad de los ecosistemas de los cuales obtenemos
-              los servicios esenciales para nuestro desarrollo humano..</p>
-  
-          </div>
-  
+            <h3>Bienvenido al mundo Fungi</h3>
+            <img id="home" src="../imagenes/inicio.png" alt="">
         </section>
-  
-        <section id="contenido-indice" style="display: none;">
-          <h2>Índice Taxonómico</h2>
-          <p>Contenido de la sección de Índice Taxonómico.</p>
-  
-  
-  
-        </section>
-  
-        <section id="contenido-quienes" style="display: none;">
-          <h2>Quiénes Somos</h2>
-          <p>Contenido de la sección de Quiénes Somos.</p>
-        </section>
-  
-        <section id="contenido-glosario" style="display: none;">
-          <h2>Glosario</h2>
-          <p>Contenido de la sección de Glosario.</p>
-        </section>
-  
-        <section id="contenido-contacto" style="display: none;">
-          <h2>Contáctenos</h2>
-          <p>Jeremy Pavon: jjpavonb@utn.edu.ec/0997786962</p>
-        </section>
-      </div>
 
+        <section id="contenido-introduccion" style="display: none;">
+            <h2>Introducción</h2>
+            <div class="intro">
+                <img class="intro1" src="../img/fondo3.jpg" alt="intro">
+                <img class="intro2" src="../img/img5.jpg" alt="intro2">
+            </div>
+            <div class="textintro">
+                <p>Fungí Explorer tiene como objetivo poner a disposición el compendio de información más completo de
+                    hongos macroscópicos del Ecuador.</p>
+            </div>
+        </section>
+
+        <section id="contenido-indice" style="display: none;">
+            <h2>Índice Taxonómico</h2>
+            <p>Contenido de la sección de Índice Taxonómico.</p>
+        </section>
+
+        <section id="contenido-quienes" style="display: none;">
+            <h2>Quiénes Somos</h2>
+            <p>Contenido de la sección de Quiénes Somos.</p>
+        </section>
+
+        <section id="contenido-glosario" style="display: none;">
+            <h2>Glosario</h2>
+            <p>Contenido de la sección de Glosario.</p>
+        </section>
+
+        <section id="contenido-contacto" style="display: none;">
+            <h2>Contáctenos</h2>
+            <p>Jeremy Pavon: jjpavonb@utn.edu.ec/0997786962</p>
+        </section>
+    </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/a8638e0a1d.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
+
 </html>
