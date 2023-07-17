@@ -59,7 +59,7 @@
                 pasando por los desiertos y las zonas polares. Algunos hongos
                 son parásitos, mientras que otros forman relaciones
                 simbióticas con plantas y animales, beneficiándose mutuamente.</p>
-            <a href="#" class="cta">Registrarse</a>
+            <a href="./html/register.html" class="cta">Registrarse</a>
         </section>
     </header>
 

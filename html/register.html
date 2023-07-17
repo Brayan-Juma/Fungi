@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -16,16 +16,16 @@
     <div class="register-container">
         <h1 class="register-title">Registro</h1>
         <img class="mi-proyecto-1-1" alt="" src="../img/facebook.png">
-        <form class="register-form">
-            <input type="text" placeholder="    Ingrese su numero de cedula" id="cedula" required autofocus>
+        <form class="register-form" action="../php/insertar.php" method="POST">
+            <input type="text" placeholder="Ingrese cedula" id="cedula" name="cedula" required autofocus>
             <br>
-            <input type="text" placeholder="    Ingrese su nombre completo" id="nombre" required autofocus>
+            <input type="text" placeholder="Ingreses sus nombres" id="nombre" name="nombre" required autofocus>
             <br>
-            <input type="email" id="email" placeholder="    ingrese su correo" required autofocus>
+            <input type="email" id="email" name="email" placeholder="Ingrese su correo" required autofocus>
             <br>
-            <input type="password" id="password" placeholder="  Ingrese una contraseña" required>
+            <input type="password" id="password" name="password" placeholder="Ingrese una contraseña" required>
             <br>
-            <input type="password" id="password" placeholder="  Confirme su contraseña" required>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirme su contraseña" required>
             <br>
             <input type="submit" value="Registrarse">
         </form>
@@ -39,18 +39,18 @@
             <div class="red-social">
                 <a href="#" class="fa fa-facebook devicongoogle"></a>
                 <a href="#" class="fa fa-instagram devicongoogle"></a>
-            
+
             </div>
 
 
-           
-      
-        
-        <label id="Ya-tienes-una-cuenta">Ya tienes una cuenta?: 
-            <a href="../html/login.html"><b>Inicia sesión aquí</b></a>
-        </label>
-        <br>
-    </div>
+
+
+
+            <label id="Ya-tienes-una-cuenta">Ya tienes una cuenta?:
+                <a href="../html/login.html"><b>Inicia sesión aquí</b></a>
+            </label>
+            <br>
+        </div>
 </body>
 
 </html>
