@@ -20,8 +20,8 @@
     <!--Header -->
     <header class="hero">
         <nav class="nav container">
-            <div class="nav__logo">
-                <h2 class="nav__title">Logo FungiExplorer</h2>
+            <div class="logo">
+                <img src="./img/logo1.png" alt="Descripción del logo">
             </div>
 
             <ul class="nav__link nav__link--menu">

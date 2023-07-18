@@ -89,7 +89,14 @@ body {
 .nav__close {
     display: var(--show, none);
 }
+.logo {
+    float: left;
+    margin-right: 1px; /* Ajusta el margen derecho según sea necesario */
+}
 
+.logo img {
+    width: 300px; /* Ajusta el ancho de la imagen según sea necesario */
+}
 
 /* Hero container */
 
