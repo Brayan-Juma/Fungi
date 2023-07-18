@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js"></script>
 </head>
 
@@ -62,7 +62,7 @@
 
 <!-- Secciòn INICIO -->
 
-    <section class="container about" id="motivos">
+    <section class="container about" id="conocimiento">
         <h2 class="subtitle">Ventajas de Usar FungiExplorer</h2>
         <p class="about__paragraph">Son muchas las razones por la
             que debes usar FungiExplorer
@@ -242,7 +242,7 @@
 
 
 
-    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

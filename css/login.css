@@ -1,119 +1,78 @@
 body {
-  background-image: url("../img/fondo-fungi.jpg");
-  background-size: cover;
+  background:linear-gradient(to right,  #00deef, #014580);
+  height: 90vh;
+ 
 }
 
 .login-container {
   width: 300px;
-  margin: 30px auto;
+  margin: 100px auto;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   border: 0.1px solid #111111;
   box-shadow: 0 0 20px rgba(60, 60, 60, 10);
+  filter:drop-shadow(0em 30px 150px #9bd2f4);
+}
+
+
+.logo-container {
+  margin-left:  50px;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
 }
 
 .login-title {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  text-align: left;
-  font-size: 36px;
-  color: #0a0909;
-  font-family: 'Noto Sans';
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .login-form div {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 10px;
 }
 
 .login-form label {
-  font-size: 16px;
-  color: #050404;
+  display: block;
   font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.login-form input {
-  border-radius: 12px;
-  background-color: rgba(60, 60, 60, 0);
-  border: 0.1px solid #000000;
+.login-form input[type="text"],
+.login-form input[type="password"] {
   width: 100%;
-  display: block;
-  padding: 10px;
-  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
 }
 
 .login-form input[type="submit"] {
-  border-radius: 12px;
-  background: linear-gradient(90.57deg, #628eff, #8740cd 53.13%, #580475);
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 14px 10px;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  font-size: 20px;
-  color: #fff;
-  font-family: 'Noto Sans';
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
 .links {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
-.olvidadaste-tu-contrasea,
-.no-tienes-una {
   text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: 'Noto Sans';
-  color: #000000;
+  margin-top: 15px;
 }
 
-.olvidadaste-tu-contrasea a,
-.no-tienes-una a {
-  color: #550569;
-  font-weight: bold;
+.links a {
+  text-decoration: none;
+  color: #008CBA;
 }
 
-@media screen and (max-width: 480px) {
-  .login-container {
-    width: 90%;
-    margin: 50px auto;
-    padding: 10px;
-  }
-
-  .login-title {
-    font-size: 24px;
-  }
-
-  .login-form label {
-    font-size: 14px;
-  }
-
-  .login-form input {
-    font-size: 14px;
-  }
-
-  .links {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-
-  .olvidadaste-tu-contrasea {
-    display: none;
-  }
+.links a:hover {
+  text-decoration: underline;
 }
-
-
-  
