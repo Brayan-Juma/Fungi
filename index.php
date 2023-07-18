@@ -21,7 +21,7 @@
     <header class="hero">
         <nav class="nav container">
             <div class="logo">
-                <img src="./img/logo1.png" alt="Descripción del logo">
+                <img src="" alt="Descripción del logo">
             </div>
 
             <ul class="nav__link nav__link--menu">

@@ -35,3 +35,8 @@ function actualizarCombo() {
       combo2.options.add(new Option("Opción Y", "opcionY"));
   }
 }
+
+function toggleDropdownMenu() {
+  var dropdownMenu = document.getElementById("dropdown-menu");
+  dropdownMenu.style.display = (dropdownMenu.style.display === "none") ? "block" : "none";
+}

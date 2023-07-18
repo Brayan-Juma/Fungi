@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+h1 {
+    font-size: 40px;
+    width:max-content;
+    color: #eaeaea;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 'll Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+    height: 120px;
+    margin-right: 50%;
+
+
+
+}
+
+#home {
+    width: 100%;
+    height: 90%;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background: #3ff61e;
+    padding: 20px;
+    flex: 0 0 250px;
+    opacity: 90%;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: green;
+    /* Fondo verde */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.navbar-menu li {
+    margin-right: 10px;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.navbar-menu li a:hover {
+    background-color: white;
+    color: green;
+}
+
+.navbar-dropdown {
+    position: relative;
+}
+
+.navbar-dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: green;
+    /* Fondo verde */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-dropdown-menu li {
+    margin: 0;
+}
+
+.navbar-dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
+.navbar-dropdown-menu li a:hover {
+
+    background-color: white;
+    color: green;
+
+}
+
+.nav-button {
+    display: block;
+    padding: 20px;
+    background: #083900;
+    /*font-family:'Courier New', Courier, monospace;*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: unset;
+
+    border-radius: 5px;
+
+}
+
+.nav-button:hover {
+    background-color: #010101;
+
+}
+
+
+.nav :hover {
+    background: #FFF;
+    ;
+
+}
+
+
+
+
+.content-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    width: 100%;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    background: #333;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    background: #7B5D41;
+    color: #FFF;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.intro {
+    display: inline-block;
+    left: 260px;
+    width: 330px;
+    text-align: right;
+}
+
+.textintro {
+    position: relative;
+    display: inline-block;
+
+    left: 5%;
+    width: 55%;
+}
+
+.intro1 {
+    width: 260px;
+    height: 200px;
+    margin-right: 10px;
+
+
+
+}
+
+.intro2 {
+    width: 260px;
+    height: 260px;
+    margin-right: 10px;
+
+
+
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 44px;
+}
+
+p {
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+#tabla-especies tbody tr:last-child td {
+    border-bottom: 3px solid black;
+}
+
+
+.logou {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+
+
+
+}
