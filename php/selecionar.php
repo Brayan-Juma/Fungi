@@ -32,6 +32,8 @@ if ($result) {
     echo '<tr><td colspan="3">Error en la consulta: ' . $conn->errorInfo()[2] . '</td></tr>';
 }
 
-// Cerrar conexión a la base de datos
+// Cerrar conexión a la base de datos}
+
+
 $conn = null;
 ?>

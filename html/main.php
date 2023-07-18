@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../js/script1.js"></script>
@@ -19,30 +20,41 @@
     <nav class="navbar">
         <div class="navbar-logo">
             <img class="logo" src="../img/LogoFungi.png" alt="Logo">
-          
+
         </div>
-  <div>
-  <h1>FUNGI EXPLORER</h1>
-  </div>
-  
+        <div>
+            <h1>FUNGI EXPLORER</h1>
+        </div>
+
         <ul class="navbar-menu">
 
-            <li><a href="#" onclick="cambiarContenido(event, 'contenido-registro')" class="nav-button">Registrar Hongo</a></li>
-            <li><a href="#"  onclick="cambiarContenido(event, 'contenido-registro')" class="nav-button">Bienvenido</a></li>
-           
+            <li><a href="#" onclick="cambiarContenido(event, 'contenido-registro')" class="nav-button">Registrar
+                    Hongo</a></li>
+            <li>
+                        <?php
+                        // Mostrar el nombre de usuario si está presente en el parámetro de la URL
+                        if (isset($_GET["nombre"])) {
+                            $nombreUsuario = $_GET["nombre"];
+                            echo "<h4>$nombreUsuario</h4>";
+                        } else {
+                            echo "Usuario no identificado";
+                        }
+                        ?>
+                  </li>
+
             <li class="navbar-dropdown">
-        <button class="navbar-dropdown-toggle" onclick="toggleDropdownMenu()">
-            <img class="logou" src="../img/usuario.png" alt="Foto de usuario" class="user-photo">
-            <i class="fas fa-chevron-down"></i>
-        </button>
-        <ul class="navbar-dropdown-menu" id="dropdown-menu">
-            <li><a href="#" id="configuracion">Configuración</a></li>
-            <li><a href="../index.php" id="cerrar-sesion">Cerrar sesión</a></li>
-        </ul>
-    </li>
+                <button class="navbar-dropdown-toggle" onclick="toggleDropdownMenu()">
+                    <img class="logou" src="../img/usuario.png" alt="Foto de usuario" class="user-photo">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="navbar-dropdown-menu" id="dropdown-menu">
+                    <li><a href="#" id="configuracion">Cerrar sesión</a></li>
+                   
+                </ul>
+            </li>
         </ul>
     </nav>
-     <div class="main-container">
+    <div class="main-container">
         <div class="sidebar">
             <nav>
                 <ul class="nav-links">
@@ -56,7 +68,7 @@
                             class="nav-button">Inicio</a>
                     </li>
                     <li><a href="introduccion.html" onclick="cambiarContenido(event, 'contenido-introduccion')"
-                            class="nav-button">INTRODUCCION</a></li>
+                            class="nav-button">Introducción</a></li>
                     <li><a href="indice-taxonomico.html" onclick="cambiarContenido(event, 'contenido-indice')"
                             class="nav-button">Índice Taxonómico</a></li>
                     <li><a href="quienes-somos.html" onclick="cambiarContenido(event, 'contenido-quienes')"
@@ -71,8 +83,25 @@
 
         <div class="content-container">
             <section id="contenido-inicio">
-                <h3>Bienvenido al mundo Fungi</h3>
-                <img id="home" src="../imagenes/inicio.png" alt="">
+
+                <div class="text-with-background">
+
+                    <h3 class="bienvenido">
+                        <?php
+                        // Mostrar el nombre de usuario si está presente en el parámetro de la URL
+                        if (isset($_GET["nombre"])) {
+                            $nombreUsuario = $_GET["nombre"];
+                            echo "<h1>Bienvenido, $nombreUsuario!</h1>";
+                        } else {
+                            echo "Usuario no identificado";
+                        }
+                        ?>
+                    </h3>
+              
+                </div>
+
+                <img id="home" src="../img/inicio.gif" alt="">
+
 
             </section>
 
@@ -263,13 +292,13 @@
             <script src="https://kit.fontawesome.com/a8638e0a1d.js" crossorigin="anonymous"></script>
             <script src="../js/main.js"></script>
         </div>
-        </div>
+    </div>
 
-        <footer class="footer">
-            <div class="container">
-                <p>Todos los derechos reservados &copy; 2023 Fungí Explorer</p>
-            </div>
-        </footer>
+    <footer class="footer">
+        <div class="container">
+            <p>Todos los derechos reservados &copy; 2023 Fungí Explorer</p>
+        </div>
+    </footer>
 </body>
 
 </html>
