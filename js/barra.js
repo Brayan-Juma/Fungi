@@ -1,17 +1,20 @@
-let listElements = document.querySelectorAll('.list__button--click');
+document.getElementById("registroForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
 
-listElements.forEach(listElement => {
-    listElement.addEventListener('click', ()=>{
-        
-        listElement.classList.toggle('arrow');
-
-        let height = 0;
-        let menu = listElement.nextElementSibling;
-        if(menu.clientHeight == "0"){
-            height=menu.scrollHeight;
-        }
-
-        menu.style.height = `${height}px`;
-
+    fetch("../php/insertar.php", {
+        method: "POST",
+        body: formData,
     })
+    .then(response => response.json())
+    .then(data => {
+        const mensajeRegistro = document.getElementById("mensajeRegistro");
+        mensajeRegistro.innerText = data.mensaje;
+        mensajeRegistro.style.display = "block";
+    })
+    .catch(error => console.error(error));
 });
+
+
+

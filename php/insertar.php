@@ -17,8 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $query = "INSERT INTO Usuario (cedulausuario, nombreuser, emailuser, contraseñauser) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($query);
     $stmt->execute([$cedula, $nombre, $email, $password]);
-    echo 'Los datos han sido insertados en la base de datos';
-
+    $_SESSION['mensaje'] = 'Registro exitoso. ¡Bienvenido!';
     header('location: ../html/login.html');
     exit();
   }
