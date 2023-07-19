@@ -52,7 +52,7 @@
                               es inspirar a investigadores,
                                 estudiantes y amantes de la naturaleza a explorar y comprender la riqueza
                                  que los hongos tienen para ofrecer</p>
-                       <a href="./html/register.html"><button  class="btn btn-1">Registrarme</button></a> 
+                       <a href="./html/registrar.html"><button  class="btn btn-1">Registrarme</button></a> 
                     </div>
                     
                 </div>
