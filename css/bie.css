@@ -15,9 +15,9 @@
 
 h1 {
     font-size: 40px;
-    width:max-content;
+    width: max-content;
     color: #eaeaea;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 'll Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 'll Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
 }
 
@@ -30,13 +30,7 @@ h1 {
 
 }
 
-.text-with-background {
-    position: relative;
-    color: white; /* Color del texto */
-    padding: 20px; /* Espaciado interior del texto */
-    font-size: 24px; /* Tamaño del texto */
-    text-align: center; /* Alinear el texto al centro */
-}
+
 
 #home {
     position: absolute;
@@ -44,14 +38,16 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajustar el tamaño de la imagen para cubrir todo el contenedor */
-    z-index: -1; /* Colocar la imagen detrás del texto */
+    object-fit: cover;
+    /* Ajustar el tamaño de la imagen para cubrir todo el contenedor */
+    z-index: -1;
+    /* Colocar la imagen detrás del texto */
 }
 
 .main-container {
     display: flex;
     flex-wrap: wrap;
-    min-height: 100vh;
+ 
 }
 
 .sidebar {
@@ -271,5 +267,24 @@ p {
     margin-right: 10px;
 
 
+
+}
+
+.logoindex {
+    width: 300px;
+    height: 200px;
+    margin-right: 50px;
+    border-radius: 30px;
+
+}
+
+.logoindex:hover {
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 
 }

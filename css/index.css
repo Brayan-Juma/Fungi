@@ -16,7 +16,7 @@ body{
 /* SECCION I N I C I O */
 .inicio{
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/fondo-fungi.jpg');
-    clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 84%, 0 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 30% 84%, 0 60%);
     height: 90vh;
     padding:  0 20px;
 }
