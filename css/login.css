@@ -1,19 +1,19 @@
 
 body {
-  background:linear-gradient(to right,  #00deef, #014580);
+  background:linear-gradient(rgba(7, 51, 20, 0.6), rgba(8, 196, 80, 0.904));
   height: 90vh;
  
 }
 
+
 .login-container {
   width: 300px;
-  margin: 100px auto;
+  margin: 59px auto;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   border: 0.1px solid #111111;
   box-shadow: 0 0 20px rgba(60, 60, 60, 10);
-  filter:drop-shadow(0em 30px 150px #9bd2f4);
 }
 
 
@@ -44,7 +44,7 @@ body {
 .login-form input[type="password"] {
   width: 100%;
   padding: 5px;
-  border: 1px solid #070707;
+  border: 1px solid #000000;
   border-radius: 4px;
   font-family: 'Arial', sans-serif;
 }
@@ -102,3 +102,29 @@ body {
 .input-field:hover {
   border-color: #ddd;
 }
+
+
+/* Agregar los estilos para el ícono del ojo */
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Estilos para posicionar el ícono correctamente */
+.input-wrapper {
+  position: relative;
+}
+
+/* Estilos adicionales, puedes ajustar estos a tu gusto */
+.input-field {
+  padding-right: 30px;
+}
+
+
+
+
+
+

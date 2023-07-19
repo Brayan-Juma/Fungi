@@ -1,120 +1,122 @@
+
 body {
-  background-image: url("../img/img2.jpg");
-  background-size: cover;
+  background:linear-gradient(rgba(7, 51, 20, 0.6), rgba(8, 196, 80, 0.904));
+  height: 90vh;
+ 
 }
 
+
 .register-container {
-  
   width: 300px;
-  margin: 30px auto;
-  padding: 10px;
-background-color: rgba(255, 255, 255, 0.4);
-  opacity:initial;
+  margin: 59px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
-  border: 0.1px solid;
+  border: 0.1px solid #111111;
   box-shadow: 0 0 20px rgba(60, 60, 60, 10);
 }
 
+
+.logo-container {
+  margin-left:  50px;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+}
+
 .register-title {
-  font-size: 36px;
-  font-weight: 600;
-  font-family: 'Noto Sans';
-  color: #020101;
-  text-align: left;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
-.mi-proyecto-1-1 {
-  position: absolute;
-  left: 20px;
-  top: 60px;
-  width: 150px;
-  height: auto;
+.register-form div {
+  margin-bottom: 10px;
 }
 
-.register-form input {
-  border-radius: 12px;
-  border: 0.1px solid #000000;
-  width: 95%;
-  display: block;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 0px;
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
 }
 
 .register-form input[type="submit"] {
-  background: linear-gradient(90.57deg, #2e4cee, #221ebf 53.13%, #040f75);
-  color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-#Ya-tienes-una-cuenta {
-  font-size: 16px;
-  font-weight: 500;
-  font-family: 'Noto Sans';
-  color: #030303;
-  text-align: left;
+.register-form input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
-.or-child {
-  border-top: 2px solid #4d4d4d;
-  box-sizing: border-box;
-  width: 100px;
-  height: 2px;
+.links {
+  text-align: center;
+  margin-top: 15px;
 }
 
-.or1 {
-  font-weight: 500;
+.links a {
+  text-decoration: none;
+  color: #008CBA;
 }
 
-.or {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
+.links a:hover {
+  text-decoration: underline;
 }
 
-.devicongoogle {
-  width: 42px;
-  height: 42px;
-  overflow: hidden;
-  flex-shrink: 0;
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: transparent;
+
 }
 
-.devicongoogle-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
+.input-field:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76,175,80,0.5);
 }
 
-.other-logins {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 12px;
-  text-align: left;
-  font-size: 16px;
-  color: #4d4d4d;
-  font-family: 'Noto Sans';
+.input-field:hover {
+  border-color: #ddd;
 }
 
-/* Estilos para pantallas grandes */
-@media screen and (max-width: 600px) {
-  .register-container {
-    width: 80%;
-    margin: 50px auto;
-  }
 
-  .mi-proyecto-1-1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 150px;
-  }
+/* Agregar los estilos para el ícono del ojo */
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
+
+/* Estilos para posicionar el ícono correctamente */
+.input-wrapper {
+  position: relative;
+}
+
+/* Estilos adicionales, puedes ajustar estos a tu gusto */
+.input-field {
+  padding-right: 30px;
+}
+
+
+
+
+
+

@@ -14,43 +14,45 @@
 
 <body>
     <div class="register-container">
-        <h1 class="register-title">Registro</h1>
-        <img class="mi-proyecto-1-1" alt="" src="../img/facebook.png">
-        <form class="register-form" action="../php/insertar.php" method="POST">
-            <input type="text" placeholder="Ingrese cedula" id="cedula" name="cedula" required autofocus>
-            <br>
-            <input type="text" placeholder="Ingreses sus nombres" id="nombre" name="nombre" required autofocus>
-            <br>
-            <input type="email" id="email" name="email" placeholder="Ingrese su correo" required autofocus>
-            <br>
-            <input type="password" id="password" name="password" placeholder="Ingrese una contraseña" required>
-            <br>
-            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirme su contraseña" required>
-            <br>
-            <input type="submit" value="Registrarse">
-        </form>
-        <div class="other-logins">
-            <div class="or">
-                <div class="or-child"></div>
-                <div class="or1">Or</div>
-                <div class="or-child"></div>
-            </div>
 
-            <div class="red-social">
-                <a href="#" class="fa fa-facebook devicongoogle"></a>
-                <a href="#" class="fa fa-instagram devicongoogle"></a>
-
-            </div>
-
-
-
-
-
-            <label id="Ya-tienes-una-cuenta">Ya tienes una cuenta?:
-                <a href="../html/login.html"><b>Inicia sesión aquí</b></a>
-            </label>
-            <br>
+        <div class="logo-container">
+            <img src="../img/fondoAzul.png" alt="Logo" class="logo">
         </div>
+        <h1 class="register-title">Registrarse</h1>
+        <form class="register-form" method="POST">
+            <div>
+                <input type="text" id="cedula" name="cedulaI" class="input-field" required placeholder="Ingrese su cedula">
+            </div>
+            <div>
+                <input type="text" id="nombres" name="nombreApellido" class="input-field" required placeholder="Ingrese sus Nombres">
+            </div>
+            <div>
+                <input type="email" id="email" name="email" class="input-field" required placeholder="Ingrese su email">
+            </div>
+            <div>
+                <div class="input-wrapper">
+                    <input type="password" id="password" name="passwordI" class="input-field" required placeholder="Ingrese una contraseña">
+                    <span class="eye-icon" onclick="togglePasswordVisibility()">
+                        <i class="fa fa-eye" id="eye"></i>
+                    </span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="password" id="password" name="passwordI" class="input-field" required placeholder="Repita la contraseña">
+                    <span class="eye-icon" onclick="togglePasswordVisibility()">
+                        <i class="fa fa-eye" id="eye"></i>
+                    </span>
+                </div>
+            </div>
+
+            <input type="submit" value="Iniciar sesión" id="btn-iniciar-sesion">
+            <div class="links">
+                <div class="no-tienes-una">
+                    Ya tengo una cuenta? <a href="../html/login.html">Iniciar Sesion</a>
+                </div>
+            </div>
+        </form>
+
 </body>
+<script src="../js/login.js"></script>
 
 </html>
