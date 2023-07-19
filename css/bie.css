@@ -13,6 +13,12 @@
 
 
 
+
+
+
+
+
+
 h1 {
     font-size: 40px;
     width:max-content;
@@ -55,7 +61,8 @@ h1 {
 }
 
 .sidebar {
-    background: #3ff61e;
+    background:linear-gradient(rgba(7, 51, 20, 0.6), rgba(8, 196, 80, 0.904));
+    height: 90vh;
     padding: 20px;
     flex: 0 0 250px;
     opacity: 90%;
@@ -77,8 +84,8 @@ h1 {
 }
 
 .navbar {
-    background-color: green;
-    /* Fondo verde */
+    background:linear-gradient(rgba(7, 51, 20, 0.6), rgba(8, 196, 80, 0.904));
+    height: 90vh;
 
     display: flex;
     justify-content: space-between;

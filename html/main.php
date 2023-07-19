@@ -30,7 +30,9 @@
 
             <li><a href="#" onclick="cambiarContenido(event, 'contenido-registro')" class="nav-button">Registrar
                     Hongo</a></li>
+                    <li>Bienvenido</li>
             <li>
+             
                         <?php
                         // Mostrar el nombre de usuario si está presente en el parámetro de la URL
                         if (isset($_GET["nombre"])) {
