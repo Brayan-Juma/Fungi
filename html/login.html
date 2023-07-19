@@ -20,16 +20,16 @@
         </div>
 
         <h1 class="login-title">Iniciar sesión</h1>
-        <form class="login-form" onsubmit="agregarDireccion(); return false;" action="../php/verificar.php"
-            method="POST">
+
+        <form class="login-form" action="../php/verificar.php" method="POST">
             <div>
                 <label for="cedula" class="input-label">Cédula:</label>
-                <input type="text" id="cedula" name="cedulaI" class="input-field" required>
+                <input type="text" id="cedulaI" name="cedulaI" class="input-field" required>
             </div>
             <div>
                 <label for="password" class="input-label">Contraseña:</label>
                 <div class="input-wrapper">
-                    <input type="password" id="password" name="passwordI" class="input-field" required>
+                    <input type="password" id="passwordI" name="passwordI" class="input-field" required>
                     <span class="eye-icon" onclick="togglePasswordVisibility()">
                         <i class="fa fa-eye" id="eye"></i>
                     </span>

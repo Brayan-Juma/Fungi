@@ -1,16 +1,15 @@
 <?php
 
-include_once ('./conexion.php');
+include_once('./conexion.php');
 
 $conn = conexionbd();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $cedula = $_POST['cedula'];
-  $nombre = $_POST['nombre'];
+  $nombre = $_POST['nombreApellido'];
   $email = $_POST['email'];
-
   $password = $_POST['password'];
-  $confirmPassword = $_POST['confirm_password'];
+  $confirmPassword = $_POST['Confirm_password'];
 
   if ($password !== $confirmPassword) {
     $error = 'Las contraseñas no coinciden';
