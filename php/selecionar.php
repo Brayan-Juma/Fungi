@@ -17,13 +17,16 @@ if ($result) {
 
             // Agregar una fila a la tabla con los datos de la especie
             echo '<tr>';
-            echo '<td><img  src="../img/' . $imagen . '" alt="Imagen" width="150px" height="150px"></td>';
+            echo '<td><img class="logoindex"   src="../img/' . $imagen . '" alt="Imagen"></td>';
             echo '<td>';
             echo '<h3>' . $nombreCientifico . '</h3>';
-            echo '<p>' . $descripcion . '</p>';
+            echo '<hr>';
+            echo '</hr>';
+            echo '<p>' . $descripcion . '</p>';           
             echo '</td>';
             echo '</tr>';
-      
+
+
         }
     } else {
         echo '<tr><td colspan="3">No se encontraron datos.</td></tr>';
