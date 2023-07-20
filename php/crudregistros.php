@@ -197,7 +197,7 @@ if(isset($_POST['delete']))
                     <tr align="left">
                         <td><?= $user->cedulausuario ?></td>
                         <td><?= $user->nombreuser ?></td>
-                        <td><?= $user->emailuser ?></td>
+                        <td><?= $user->emailuser ?></td> 
                         <td><?= $user->fecha_registro ?></td>
                         <td>
                             <form method="post">
