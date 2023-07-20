@@ -118,6 +118,8 @@
 
             <section id="contenido-introduccion" style="display: none;">
                 <h2>Introducción</h2>
+                <br>
+                <br>
                 <div class="intro">
                     <img class="intro1" src="../img/f1.jpg" alt="intro">
                     <img class="intro2" src="../img/fondo3.jpg" alt="intro2">
@@ -166,6 +168,8 @@
 
             <section id="contenido-indice" style="display: none;">
                 <h2>Indice Taxonomico</h2>
+                <br>
+                <br>
                 <div class="scroll-container">
                     <table id="tabla-especies">
                         <tbody>
