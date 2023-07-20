@@ -10,7 +10,7 @@
     <script src="../js/script.js"></script>
     <title>Registro Fungí</title>
     <link rel="stylesheet" href="../css/bie.css">
-  
+
 
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -32,19 +32,19 @@
 
             <li><a href="#" onclick="cambiarContenido(event, 'contenido-registro')" class="nav-button">Registrar
                     Hongo</a></li>
-                    <li>Bienvenido</li>
+            <li>Bienvenido</li>
             <li>
-             
-                        <?php
-                        // Mostrar el nombre de usuario si está presente en el parámetro de la URL
-                        if (isset($_GET["nombre"])) {
-                            $nombreUsuario = $_GET["nombre"];
-                            echo "<h4>$nombreUsuario</h4>";
-                        } else {
-                            echo "Usuario no identificado";
-                        }
-                        ?>
-                  </li>
+
+                <?php
+                // Mostrar el nombre de usuario si está presente en el parámetro de la URL
+                if (isset($_GET["nombre"])) {
+                    $nombreUsuario = $_GET["nombre"];
+                    echo "<h4>$nombreUsuario</h4>";
+                } else {
+                    echo "Usuario no identificado";
+                }
+                ?>
+            </li>
 
             <li class="navbar-dropdown">
                 <button class="navbar-dropdown-toggle" onclick="toggleDropdownMenu()">
@@ -53,7 +53,7 @@
                 </button>
                 <ul class="navbar-dropdown-menu" id="dropdown-menu">
                     <li><a href="../index.php" id="configuracion">Cerrar sesión</a></li>
-                   
+
                 </ul>
             </li>
         </ul>
@@ -101,7 +101,7 @@
                         }
                         ?>
                     </h3>
-              
+
                 </div>
 
                 <img id="home" src="../img/inicio2.gif" alt="">
@@ -159,14 +159,13 @@
 
             <section id="contenido-indice" style="display: none;">
                 <h2>Indice Taxonomico</h2>
-
-                <table id="tabla-especies">
-
-                    <tbody>
-                        <?php include('../php/selecionar.php'); ?>
-                    </tbody>
-                </table>
-
+                <div class="scroll-container">
+                    <table id="tabla-especies">
+                        <tbody>
+                            <?php include('../php/selecionar.php'); ?>
+                        </tbody>
+                    </table>
+                </div>
             </section>
 
             <section id="contenido-quienes" style="display: none;">
@@ -298,36 +297,36 @@
         </div>
     </div>
 
-  
-<!---------------Footer---------------------------------->
-<footer class="pie-pagina" id="contacto">
-    <div class="grupo-1">
-        <div class="box">
-            <figure>
-                <a href="#">
-                    <img src="../img/LogoFungi.png" alt="Logo de Fungi">
-                </a>
-            </figure>
-        </div>
-        <div class="box">
-            <h2>SOBRE NOSOTROS</h2>
-            <p><i class="fa-brands fa-whatsapp"></i>    0985459232</p>
-            <p><i class="fa-regular fa-envelope"></i>   fungiexplorer@gmail.com</p>
-        </div>
-        <div class="box">
-            <h2>SIGUENOS</h2>
-            <div class="red-social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
+
+    <!---------------Footer---------------------------------->
+    <footer class="pie-pagina" id="contacto">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../img/LogoFungi.png" alt="Logo de Fungi">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p><i class="fa-brands fa-whatsapp"></i> 0985459232</p>
+                <p><i class="fa-regular fa-envelope"></i> fungiexplorer@gmail.com</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="grupo-2">
-        <small>&copy; 2023 <b>Bryan Juma</b> - Todos los Derechos Reservados.</small>
-    </div>
-</footer>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Bryan Juma</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
 </body>
 
 </html>

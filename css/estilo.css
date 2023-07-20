@@ -4,11 +4,6 @@
 /*basic reset*/
 * {margin: 0; padding: 0;}
 
-html {
-	height: 100%;
-	background: 
-		linear-gradient(rgba(7, 51, 20, 0.6), rgba(8, 196, 80, 0.904));
-}
 
 body {
 	font-family: montserrat, arial, verdana;
@@ -24,7 +19,7 @@ body {
 	background: rgb(254, 255, 255);
 	border: 0 none;
 	border-radius: 3px;
-	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 15px 1px rgba(243, 24, 24, 0.4);
 	padding: 20px 30px;
 	box-sizing: border-box;
 	width: 80%;
