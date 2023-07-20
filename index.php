@@ -197,7 +197,7 @@
                 </div>
 
                 <figure class="testimony__picture">
-                    <img src="./img/fotoBrayan.jpeg" class="testimony__img">
+                    <img src="./img/imgenBryan.jpg" class="testimony__img">
                 </figure>
             </section>
 
