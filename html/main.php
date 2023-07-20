@@ -63,10 +63,17 @@
             <nav>
                 <ul class="nav-links">
                     <li>
+                        <!-- ... (código HTML anterior) ... -->
+
                         <div class="search-container">
-                            <input type="text" placeholder="Buscar">
-                            <button>Buscar</button>
+                            <input type="text" id="searchInput" placeholder="Buscar">
+                            <button id="searchButton" onclick="realizarBusqueda()">Buscar</button>
                         </div>
+
+                        <br>
+
+                        <div id="searchResults"></div>
+
                     </li>
                     <li><a href="inicio.html" onclick="cambiarContenido(event, 'contenido-inicio')"
                             class="nav-button">Inicio</a>
@@ -170,17 +177,121 @@
 
             <section id="contenido-quienes" style="display: none;">
                 <h2>Quiénes Somos</h2>
-                <p>Contenido de la sección de Quiénes Somos.</p>
+                <br>
+                <br>
+                <h3><b>VISION DE FUNGÍ EXPLORER:</b></h3>
+                <br>
+                <p>"Ser la plataforma líder a nivel mundial en la exploración y estudio de hongos,<br>
+                    brindando a estudiantes y entusiastas una experiencia excepcional en la investigación<br>
+                    micológica. Aspiramos a crear una comunidad global apasionada por la micología,<br>
+                    donde cada descubrimiento sea valioso y significativo para la comprensión y conservación<br>
+                    de la biodiversidad fungosa. Nuestra visión es fomentar la curiosidad y el conocimiento<br>
+                    sobre los hongos, contribuyendo al avance científico y a la protección del medio<br>
+                    ambiente a través de la innovación tecnológica y la colaboración colaborativa." </p>
+                <br>
+                <br>
+                <h3><b>MISION DE FUNGÍ EXPLORER:</b></h3>
+                <br>
+                <br>
+                <p>"En Fungí Explorer, nuestra misión es proporcionar una plataforma digital de vanguardia<br>
+                    que facilite la investigación y el registro de observaciones de hongos de manera organizada<br>
+                    y segura. Nos esforzamos por ofrecer una interfaz amigable y accesible que inspire a
+                    estudiantes,<br>
+                    investigadores y aficionados a explorar y aprender sobre el reino de los hongos. A través<br>
+                    de nuestra comunidad en línea, buscamos conectar a personas apasionadas por la micología,<br>
+                    promoviendo el intercambio de conocimientos y la colaboración en proyectos científicos.<br>
+                    Nuestra misión es contribuir al conocimiento y conservación de los hongos, empoderando a<br>
+                    nuestros usuarios para que sean protagonistas en la preservación del fascinante mundo fungoso."</p>
+
+
+
+
             </section>
 
             <section id="contenido-glosario" style="display: none;">
                 <h2>Glosario</h2>
-                <p>Contenido de la sección de Glosario.</p>
+                <br>
+                <ul>
+                    <li>
+                        <strong>Micología:</strong> Ciencia que estudia los hongos.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Hifas:</strong> Filamentos microscópicos que componen el cuerpo de un hongo.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Esporas:</strong> Células reproductivas de los hongos que se dispersan para formar
+                        nuevos individuos.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Micorrizas:</strong> Asociación simbiótica entre las raíces de las plantas y los hongos,
+                        beneficiosa para ambos.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Ascomiceto:</strong> Clase de hongos que producen sus esporas en sacos llamados ascos.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Basidiomiceto:</strong> Clase de hongos que producen esporas en estructuras llamadas
+                        basidios.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Lignina:</strong> Sustancia que forma parte de la pared celular de los hongos y les
+                        proporciona resistencia y rigidez.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Saprofitismo:</strong> Modo de nutrición de los hongos que se alimentan de materia
+                        orgánica en descomposición.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Parásito:</strong> Organismo que vive a expensas de otro, obteniendo sus nutrientes y
+                        dañándolo en el proceso.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Micelio:</strong> Conjunto de hifas que forman la parte vegetativa del cuerpo del hongo.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Quitina:</strong> Sustancia que forma parte de la pared celular de los hongos, similar
+                        al quitosano que se encuentra en los exoesqueletos de insectos.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Ectomicorriza:</strong> Tipo de micorriza en la que los hongos forman una cubierta
+                        externa en las raíces de las plantas.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Endomicorriza:</strong> Tipo de micorriza en la que los hongos penetran dentro de las
+                        células de las raíces de las plantas.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Esclerocio:</strong> Estructura compacta y resistente formada por hongos para sobrevivir
+                        en condiciones adversas.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Ascosporas:</strong> Esporas producidas en los ascos de los ascomicetos.
+                    </li>
+                   
+                    
+                </ul>
             </section>
+
 
             <section id="contenido-contacto" style="display: none;">
                 <h2>Contáctenos</h2>
-                <p>Jeremy Pavon: jjpavonb@utn.edu.ec/0997786962</p>
+                <p><i class="fa-brands fa-whatsapp"></i> 0985459232</p>
+                <p><i class="fa-regular fa-envelope"></i> fungiexplorer@gmail.com</p>
+
             </section>
 
             <section id="contenido-registro" style="display: none;">
@@ -328,5 +439,6 @@
         </div>
     </footer>
 </body>
+<script src="../js/buscar.js"></script>
 
 </html>
