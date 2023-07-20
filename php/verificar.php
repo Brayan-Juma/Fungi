@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Las credenciales no coinciden, mostrar mensaje de error
         echo '<script>
-        alert("Credenciales inválidas. Por favor, verifique su correo electrónico y contraseña.");
+        alert("Credenciales inválidas. Por favor, verifique su cedula y contraseña.");
         window.location.href = "../html/login.html";
         </script>';
     }
