@@ -104,7 +104,7 @@
               
                 </div>
 
-                <img id="home" src="../img/inicio.gif" alt="">
+                <img id="home" src="../img/inicio2.gif" alt="">
 
 
             </section>
