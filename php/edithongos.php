@@ -6,14 +6,14 @@ if(isset($_POST['update']) && !empty($_POST['update'])){
     if($ret_val == 1){
         echo '<script type="text/javascript">'; 
         echo 'alert("Record Updated Successfully");'; 
-        echo 'window.location.href = "index.php";';
+        echo 'window.location.href = "crudregistros.php";';
         echo '</script>';
     }
 }
 ?>
 <div class="container-fluid bg-3 text-center">    
   <h3>Fungi Explorer</h3>
-  <a href="index.php" class="btn btn-primary pull-right" style="margin-top: -30px"><span class="glyphicon glyphicon-step-backward"></span>Back</a>
+  <a href="Crudregistros.php" class="btn btn-primary pull-right" style="margin-top: -30px"><span class="glyphicon glyphicon-step-backward"></span>Regresar</a>
   <br>  
   <div class="panel panel-primary">
     <div class="panel-heading">Administrar Hongos</div>
@@ -64,7 +64,7 @@ if(isset($_POST['update']) && !empty($_POST['update'])){
         <div class="form-group">
           <label class="control-label col-sm-2"></label>
           <div class="col-sm-5">
-            <input type="submit" class="btn btn-success" name="update" value="Update">                    
+            <input type="submit" class="btn btn-success" name="update" value="Actualizar" >                    
           </div>
         </div> 
       </div>      

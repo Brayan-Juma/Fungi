@@ -5,14 +5,14 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])){
     if($ret_val == 1){
         echo '<script type="text/javascript">'; 
         echo 'alert("Record Saved Successfully");'; 
-        echo 'window.location.href = "index.php";';
+        echo 'window.location.href = "crudregistros.php";';
         echo '</script>';
     }
 }
 ?>
 <div class="container-fluid bg-3 text-center">    
   <h3>Fungi Explorer</h3>
-  <a href="index.php" class="btn btn-primary pull-right" style="margin-top: -30px"><span class="glyphicon glyphicon-eye-open"></span> View Records</a>
+  <a href="crudregistros.php" class="btn btn-primary pull-right" style="margin-top: -30px"><span class="glyphicon glyphicon-eye-open"></span> Ver registros</a>
   <br>
   
   <div class="panel panel-primary">
@@ -63,7 +63,7 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])){
                 <div class="form-group">
                     <label class="control-label col-sm-2"></label>
                     <div class="col-sm-5">
-                        <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+                        <input type="submit" class="btn btn-primary" name="submit" value="Agregar">
                     </div>
                 </div> 
             </div>      

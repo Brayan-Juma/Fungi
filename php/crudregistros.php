@@ -175,7 +175,7 @@ if(isset($_POST['delete']))
 
 <div class="container-fluid bg-3 text-center">
     <h3>Gestionar Usuarios</h3>
-    <a href="./insertuser.php" class="btn btn-primary pull-right" style="margin-top: -30px"><span class="glyphicon glyphicon-plus-sign"></span>Add Record</a>
+    <a href="./insertuser.php" class="btn btn-primary pull-right" style="margin-top: -30px"><span class="glyphicon glyphicon-plus-sign"></span>Añadir Registro</a>
     <br>
     <div class="panel panel-primary">
         <div class="panel-heading">Gestionar Registro Usuarios</div>
@@ -234,7 +234,7 @@ if(isset($_POST['delete']))
         <div class="box">
             <figure>
                 <a href="#">
-                    <img src="./img/LogoFungi.png" alt="Logo de Fungi">
+                    <img src="../img/LogoFungi.png" alt="Logo de Fungi">
                 </a>
             </figure>
         </div>

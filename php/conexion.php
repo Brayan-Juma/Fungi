@@ -16,7 +16,7 @@ function conexionbd()
 
         $conn = new PDO("pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$password");
 
-        echo "Conexión exitosa";
+       
 
     } catch (PDOException $th) {
 
