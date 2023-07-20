@@ -8,23 +8,52 @@
     <script src="../js/script1.js"></script>
     <script src="../js/script.js"></script>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bie.css">
 
     <title>Registro Fungí</title>
 </head>
 
 <body>
-
-    <nav class="navbar">
+<nav class="navbar">
         <div class="navbar-logo">
-            <img src="../img/logo-fungi.png" alt="Logo">
+            <img class="logo" src="../img/LogoFungi.png" alt="Logo">
+
         </div>
-        <h1 class="navbar-title">FUNGI EXPLORER</h1>
+        <div>
+            <h1>FUNGI EXPLORER</h1>
+        </div>
+
+        <ul class="navbar-menu">
+            <li>Administrador</li>
+            <li>
+
+                <?php
+                // Mostrar el nombre de usuario si está presente en el parámetro de la URL
+                if (isset($_GET["nombre"])) {
+                    $nombreUsuario = $_GET["nombre"];
+                    echo "<h4>$nombreUsuario</h4>";
+                } else {
+                    echo "Usuario no identificado";
+                }
+                ?>
+            </li>
+
+            <li class="navbar-dropdown">
+                <button class="navbar-dropdown-toggle" onclick="toggleDropdownMenu()">
+                    <img class="logou" src="../img/usuario.png" alt="Foto de usuario" class="user-photo">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="navbar-dropdown-menu" id="dropdown-menu">
+                    <li><a href="../index.php" id="configuracion">Cerrar sesión</a></li>
+
+                </ul>
+            </li>
+        </ul>
     </nav>
 
-    <aside class="sidebar">
-        <div class="logo">
-        </div>
-        <ul class="menu">
+    <aside class="sidebar111">
+              <ul class="menu">
             <li><a href="#" onclick="cambiarContenido(event, 'contenido-hongos')" class="nav-button">Hongos</a></li>
             <li><a href="#" onclick="cambiarContenido(event, 'contenido-usuarios')" class="nav-button">Usuarios</a></li>
         </ul>
@@ -199,5 +228,40 @@ if(isset($_POST['delete']))
     <script src="https://kit.fontawesome.com/a8638e0a1d.js" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
 </body>
+<!---------------Footer---------------------------------->
+<footer class="pie-pagina" id="contacto">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="./img/LogoFungi.png" alt="Logo de Fungi">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p><i class="fa-brands fa-whatsapp"></i>    0985459232</p>
+            <p><i class="fa-regular fa-envelope"></i>   fungiexplorer@gmail.com</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>Bryan Juma</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+
+
+
+
+
+    <script src="../js/index.js"></script>
 
 </html>
