@@ -20,7 +20,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($resultado) {
         // Las credenciales son válidas, redirigir a main.php
         $nombreUsuario = $resultado["nombreuser"];
-        header("Location: ../html/main.php?nombre=$nombreUsuario"); // Redirigir a main.php con el nombre de usuario
+        $rol=$resultado["roluser"];
+        if($rol=="1"){
+            header("Location: ./crudregistros.php?nombre=$nombreUsuario"); 
+        }else{
+            header("Location: ../html/main.php?nombre=$nombreUsuario"); 
+        }
+        // Redirigir a main.php con el nombre de usuario
         exit(); // Asegurarse de detener la ejecución del código después de la redirección
     } else {
         // Las credenciales no coinciden, mostrar mensaje de error
